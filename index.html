@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FIGHT WITH CORONA</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body onload="fetch()">
+
+		<nav class="navbar navbar-expand-lg nav_style p-3">
+  			<a class="navbar-brand pl-5" href="#">COVID-19</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+
+  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav ml-auto pr-5">
+     				 <li class="nav-item active">
+       					 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+     				 </li>
+     				 <li class="nav-item">
+      					  <a class="nav-link" href="world.html">World</a>
+      				 </li>
+      				 <li class="nav-item">
+      					  <a class="nav-link" href="#aboutid">About</a>
+      				 </li>
+      				 <li class="nav-item">
+      					  <a class="nav-link" href="#symptomsid">Symptoms</a>
+      				 </li>
+      				 <li class="nav-item">
+      					  <a class="nav-link" href="#preventid">Prevention</a>
+      				 </li>
+      				 <li class="nav-item">
+      					  <a class="nav-link" href="#Contact">Contact</a>
+      				 </li>
+      
+    			</ul>
+    
+  			</div>
+		</nav>
+		<div class="main_header">
+			<div class="row w-100 h-100">
+				<div class="col-lg-5 col-md-5 col-12 order-lg-1 order-2">
+					<div class="leftside w-100 h-100 d-flex justify-content-center align-item-center">
+						<img src="corona.png" width="200" height="200">
+					</div>
+					
+				</div>
+
+				<div class="col-lg-7 col-md-7 col-12 order-lg-2 order-1">
+					<div class="rightside w-100 h-100 d-flex justify-content-center align-item-center">
+						<h1> Let's Stay Safe & Fight Together Against Cor<span class="cor"> <img src="o.jpg" width="50" height="50"> </span>na Virus</h1>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+
+
+		<!--******************************CORONA UPDATE***********https://api.covid19india.org/data.json**************** -->
+
+		<section class="corona_update container-fluid">
+			<div class="mb-3">
+				<h3 class="text-uppercase text-center"> covid-19 update in india </h3>
+			</div>
+
+			<div class="table-responsive">
+
+				<table class="table -border table-striped table-center" id="tbval">
+			
+					<tr>
+						<th> State </th>
+						<th> Confirmed </th>
+						<th> Active </th>
+						<th> Recovered </th>
+						<th> Deaths </th>
+						<th> Last Updated Time </th>
+					</tr>
+				</table>
+			</div>
+			
+		</section>
+		<!---**************************************************about corona************************************--->
+
+		<div class="container-fluid sub_section pt-5 pb-5" id="aboutid">
+			<div class="section_header text-center mb-5 mt-4">
+				<h1> About COVID 19 </h1>
+			</div>
+
+			<div class="row pt-5">
+				<div class="col-lg-5 col-md-6 col-12 ml-5">
+					<img src="about.png" class="img-fluid">
+					
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<h2> What is COVID-19(Corona-Virus) </h2>
+					<p> COVID-19 is the disease caused by the new coronavirus that emerged in China in December 2019. </p>
+					<p> Coronaviruses are a type of virus. There are many different kinds, and some cause disease. A newly identified coronavirus, SARS-CoV-2, has caused a worldwide pandemic of respiratory illness, called COVID-19. </p>
+					<p>As of now, researchers know that the new coronavirus is spread through droplets released into the air when an infected person coughs or sneezes. The droplets generally do not travel more than a few feet, and they fall to the ground (or onto surfaces) in a few seconds — this is why social and physical distancing is effective in preventing the spread.</p>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<!--***********************************symptons***************************************--->
+
+		<div class="container-fluid symptoms pt-5 pb-5" id="symptomsid">
+			<div class="section_header text-center mb-5 mt-4">
+				<h1> Symptoms Of Covid-19 </h1>
+			</div>
+
+			<div class="row pt-5">
+				<div class="col-lg-5 col-md-6 col-12 ml-5">
+					<img src="Symptoms.png" class="img-fluid">
+					
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<p> <b> Most common symptoms:  </b>
+							<ul>
+								<li> fever </li>
+								<li> dry cough </li>
+								<li> tiredness </li>
+
+							</ul>
+
+				 	</p> 
+					<p> <b>  Less common symptoms:  </b>
+							<ul>
+								<li> aches and pains </li>
+								<li> sore throat </li>
+								<li> diarrhoea </li>
+								<li> conjunctivitis </li>
+								<li> headache </li>
+								<li> loss of taste or smell </li>
+								<li> a rash on skin, or discolouration of fingers or toes </li>
+
+							
+							</ul> 
+					</p>
+					<p> <b> Serious symptoms:  </b>
+						<ul>
+							<li> difficulty breathing or shortness of breath </li>
+							<li> chest pain or pressure </li>
+							<li> loss of speech or movement. </li>
+							
+						</ul> 
+					</p>
+					<p> Seek immediate medical attention if you have serious symptoms.  Always call before visiting your doctor or health facility. </p>
+					<p> People with mild symptoms who are otherwise healthy should manage their symptoms at home. </p>
+					<p> On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days. </p>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<!---**************************************************prevention************************************--->
+
+		<div class="container-fluid pt-5 pb-5" id="preventid">
+			<div class="section_header text-center mb-5 mt-4">
+				<h1> Prevention </h1>
+			</div>
+
+			<div class="row pt-5">
+				<div class="col-lg-5 col-md-6 col-12 ml-5">
+					<img src="prevent.png" class="img-fluid">
+					
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+				<h2> To prevent infection and to slow transmission of COVID-19, do the following: </h2>	
+					<p> Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub. </p>
+					<p> Maintain at least 1 metre distance between you and people coughing or sneezing. </p>
+					<p> Avoid touching your face </p>
+					<p> Cover your mouth and nose when coughing or sneezing. </p>
+					<p> Stay home if you feel unwell. </p>
+					<p> Refrain from smoking and other activities that weaken the lungs. </p>
+					<p> Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people. </p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!---**************************************************contact************************************--->
+
+		<div class="container-fluid pt-5 pb-5" id="Contact">
+			<div class="section_header text-center mb-5 mt-4">
+				<h1> Contact Us </h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 offset-lg-2 col-12">
+					<form>
+						<div class="form-group">
+							<label >username</label>
+							<input type="text" class="form-control" name="username" placeholder="name" autocomplete="off" required>
+						</div>
+						<div class="form-group">
+							<label>Email </label>
+							<input type="email" class="form-control" name="email" placeholder="name@example.com" required>
+						</div>
+						<div class="form-group">
+							<label >mobile</label>
+							<input type="number" class="form-control" name="mobile" placeholder="mobile" autocomplete="off" required>
+						</div>
+
+
+						<div class="form-group">
+							<label>Select Symptoms</label><br>
+
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" value="cold" id="custom-checkbox1">
+								<label class="form-check-input" for="custom-checkbox1"> 
+								 <pre>   Cold</pre> 
+								</label>								
+							</div><br>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" value="fever" id="custom-checkbox2">
+								<label class="form-check-input" for="custom-checkbox2">
+								  <pre>   fever</pre>
+
+								</label>								
+							</div><br>
+
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" value="difficulty breathing"  id="custom-checkbox3" >
+								<label class="form-check-input" for="custom-checkbox3">
+								 <pre>   difficulty breathing </pre>
+								</label>								
+							</div><br>
+
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" value="sore throat" id="custom-checkbox4">
+								<label class="form-check-input" for="custom-checkbox4">
+								 <pre>   sore throat</pre>
+								</label>								
+							</div><br>
+
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" value="loss of speech or movement" id="custom-checkbox5">
+								<label class="form-check-input" for="custom-checkbox5">
+								 <pre>   loss of speech or movement </pre>
+								</label>								
+							</div><br>
+
+						</div>
+
+
+
+
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Example textarea</label>
+							<textarea type="email" class="form-control" id="exampleFormControlInput1" rows="3">  </textarea> 
+						</div>
+
+						<button class="btn btn-primary" type="submit">submit</button>
+
+					</form>
+					
+				</div>
+			</div>
+
+
+		</div>
+
+		<!--***************************fotter************************-->
+		<footer class="mt-5">
+			<div class="footer_style text-white text-center container-fluid">
+				<p>copyright by Mr. Singh (AMIY SINGH)</p>
+				
+			</div>
+		</footer>
+
+
+		<script type="text/javascript" >
+			alert('COVID-19 UPDATE')
+			
+			function fetch() {
+					$.get("https://api.covid19india.org/data.json",
+
+						function (data){
+
+							console.log(data["statewise"].length);
+							var tbval = document.getElementById('tbval')
+
+							for (var i = 1; i,(data["statewise"].length); i++) {
+
+								var x = tbval.insertRow();
+								x.insertCell(0);
+
+								tbval.rows[i].cells[0].innerHTML = data["statewise"][i-1]['state'];
+								tbval.rows[i].cells[0].style.background = '#7a4a91';
+								tbval.rows[i].cells[0].style.color = '#fff';
+
+								x.insertCell(1);
+								tbval.rows[i].cells[1].innerHTML = data["statewise"][i-1]['confirmed'];
+								tbval.rows[i].cells[1].style.background = '#4bb7d8';
+
+								x.insertCell(2);
+								tbval.rows[i].cells[2].innerHTML = data["statewise"][i-1]['active'];
+								tbval.rows[i].cells[2].style.background = '#fff';
+
+								x.insertCell(3);
+								tbval.rows[i].cells[3].innerHTML = data["statewise"][i-1]['recovered'];
+								tbval.rows[i].cells[3].style.background = '#4bb7d8';
+
+								x.insertCell(4);
+								tbval.rows[i].cells[4].innerHTML = data["statewise"][i-1]['deaths'];
+								tbval.rows[i].cells[4].style.background = '#fff';
+
+
+								x.insertCell(5);
+								tbval.rows[i].cells[5].innerHTML = data["statewise"][i-1]['lastupdatedtime'];
+								tbval.rows[i].cells[5].style.background = '#4bb7d8';
+
+
+							}
+						}
+
+					)
+			}
+
+		</script>
+
+</body>
+</html>
