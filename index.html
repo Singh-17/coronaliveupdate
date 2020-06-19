@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -12,15 +13,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body onload="fetch()">
-
-		<nav class="navbar navbar-expand-lg nav_style p-3">
-  			<a class="navbar-brand pl-5" href="#">COVID-19</a>
-  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	
+		<nav class="navbar navbar-expand-lg navbar-light bg-success">
+  			<a class="navbar-brand" href="#">COVID-19</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     			<span class="navbar-toggler-icon"></span>
   			</button>
 
-  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    			<ul class="navbar-nav ml-auto pr-5">
+  			<div class="collapse navbar-collapse" id="navbarNav">
+    			<ul class="navbar-nav ml-auto">
      				 <li class="nav-item active">
        					 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
      				 </li>
@@ -44,6 +45,8 @@
     
   			</div>
 		</nav>
+		
+	
 		<div class="main_header">
 			<div class="row w-100 h-100">
 				<div class="col-lg-5 col-md-5 col-12 order-lg-1 order-2">
@@ -68,7 +71,7 @@
 
 		<!--******************************CORONA UPDATE***********https://api.covid19india.org/data.json**************** -->
 
-		<section class="corona_update container-fluid">
+		<section class="corona_update container-fluid" >
 			<div class="mb-3">
 				<h3 class="text-uppercase text-center"> covid-19 update in india </h3>
 			</div>
@@ -97,11 +100,11 @@
 			</div>
 
 			<div class="row pt-5">
-				<div class="col-lg-5 col-md-6 col-12 ml-5">
+				<div>
 					<img src="about.png" class="img-fluid">
 					
 				</div>
-				<div class="col-lg-6 col-md-6 col-12">
+				<div class="col-lg-6 col-md-6 col-10">
 					<h2> What is COVID-19(Corona-Virus) </h2>
 					<p> COVID-19 is the disease caused by the new coronavirus that emerged in China in December 2019. </p>
 					<p> Coronaviruses are a type of virus. There are many different kinds, and some cause disease. A newly identified coronavirus, SARS-CoV-2, has caused a worldwide pandemic of respiratory illness, called COVID-19. </p>
@@ -121,7 +124,7 @@
 			</div>
 
 			<div class="row pt-5">
-				<div class="col-lg-5 col-md-6 col-12 ml-5">
+				<div>
 					<img src="Symptoms.png" class="img-fluid">
 					
 				</div>
@@ -174,7 +177,7 @@
 			</div>
 
 			<div class="row pt-5">
-				<div class="col-lg-5 col-md-6 col-12 ml-5">
+				<div>
 					<img src="prevent.png" class="img-fluid">
 					
 				</div>
@@ -285,7 +288,7 @@
 
 
 		<script type="text/javascript" >
-			alert('COVID-19 UPDATE')
+			alert('COVID-19 UPDATE OF INDIA')
 			
 			function fetch() {
 					$.get("https://api.covid19india.org/data.json",

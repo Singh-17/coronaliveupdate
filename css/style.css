@@ -5,12 +5,12 @@
 	font-family: sans-serif;
 }
 
-.nav_style{
-	background-color: #a29bfe
+.navbar-expand-lg a:hover{
+	color: #000;
 }
 
-.nav_style a{
-	color: #fff;
+.active a{
+	color: #000;
 }
 
 .main_header{
